@@ -1,9 +1,5 @@
 name: Build Latest Docker Image
 
-defaults:
-  run:
-    working-directory: ./apps/server
-
 on:
   pull_request:
     types: [opened, synchronize, reopened, closed]
