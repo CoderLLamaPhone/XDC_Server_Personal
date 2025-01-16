@@ -6,5 +6,4 @@ excel2flapjack
 pandas
 openpyxl
 numpy
-re
 flask_cors
