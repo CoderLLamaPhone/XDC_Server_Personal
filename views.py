@@ -293,11 +293,11 @@ def upload_file():
 @app.route('/test_uploader')
 def test_upload_file():
     # params
-    fj_url = "localhost:8000" #local
+    fj_url = #TBI
     #fj_url = "flapjack.rudge-lab.org:8000" #Web Instance Rudge Lab
     #fj_url = "198.59.83.73:8000" #Web Instance Genetic Logic Lab
-    fj_user = "Gonza10V"
-    fj_pass = "010101"
+    fj_user = #TBI
+    fj_pass = #TBI
 
     sbh_url = #TBI
     sbh_user = #TBI
