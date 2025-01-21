@@ -1,9 +1,6 @@
 # Use the official Python image from the Docker Hub
 FROM python:3.9.2
 
-# Copy the requirements.txt file into the Docker image
-COPY requirements.txt .
-
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
