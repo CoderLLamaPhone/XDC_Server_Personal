@@ -299,9 +299,9 @@ def test_upload_file():
     fj_user = "Gonza10V"
     fj_pass = "010101"
 
-    sbh_url = "https://synbiohub.colorado.edu"
-    sbh_user = "Gonza10V"
-    sbh_pass = "010101"
+    sbh_url = #TBI
+    sbh_user = #TBI
+    sbh_pass = #TBI
     sbh_collec = "xdc_sbs_revamp"
     # updated xcel file is in test/test_files
     test_file_path = '/./static'
