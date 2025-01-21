@@ -1,0 +1,9 @@
+flask
+excel2sbol
+sbol2
+requests
+excel2flapjack
+pandas
+openpyxl
+numpy
+flask_cors

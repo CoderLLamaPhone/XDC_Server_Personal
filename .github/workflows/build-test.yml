@@ -1,8 +1,4 @@
-name: Build Latest Docker Image
-
-defaults:
-  run:
-    working-directory: ./apps/server
+name: Build and Upload Docker Image
 
 on:
   pull_request:
@@ -12,11 +8,17 @@ on:
 
 jobs:
   build:
-    name: Build Docker Images
+    name: Build and Upload Docker Image
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
       run: |
-        docker build -t LLama/XDC_Server_Personal:latest .
+        docker build -t llama/xdc_server_personal:latest .
+        docker save llama/xdc_server_personal:latest | gzip > xdc_server_personal_latest.tar.gz
+    - name: Upload Docker image as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: xdc_server_personal_latest
+        path: xdc_server_personal_latest.tar.gz
